@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoadCVC" id="z52-88-wkb" customClass="LoadCVC" customModule="PokeApi_MauricioGuerrero" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dh1-mX-F09">
+                <rect key="frame" x="0.0" y="0.0" width="278" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="6ct-wJ-qGz">
+                        <rect key="frame" x="0.0" y="0.0" width="278" height="230"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6ct-wJ-qGz" firstAttribute="top" secondItem="dh1-mX-F09" secondAttribute="top" id="gYn-9t-O00"/>
+                    <constraint firstItem="6ct-wJ-qGz" firstAttribute="leading" secondItem="dh1-mX-F09" secondAttribute="leading" id="gam-1T-3rc"/>
+                    <constraint firstAttribute="bottom" secondItem="6ct-wJ-qGz" secondAttribute="bottom" id="kdo-vi-hOb"/>
+                    <constraint firstAttribute="trailing" secondItem="6ct-wJ-qGz" secondAttribute="trailing" id="nOw-bp-B8S"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="278" height="230"/>
+            <connections>
+                <outlet property="loadInd" destination="6ct-wJ-qGz" id="MG7-aT-aYy"/>
+            </connections>
+            <point key="canvasLocation" x="296.92307692307691" y="121.56398104265402"/>
+        </collectionViewCell>
+    </objects>
+</document>
